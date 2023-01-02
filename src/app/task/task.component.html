@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-content>
+    <table class="task-table">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Category</th>
+      </tr>
+
+      <tr
+        *ngFor="let task of allTasks"
+        [routerLink]="['/task/' + task.customIdTask]"
+      >
+        <td>{{ task.title }}</td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.category }}</td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>
+
+<button
+  (click)="openTaskDialog()"
+  class="add-task-btn"
+  mat-fab
+  color="accent"
+  matTooltip="Add Task"
+>
+  <mat-icon>add</mat-icon>
+</button>

@@ -1,7 +1,24 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TaskComponent } from './task/task.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { UserComponent } from './user/user.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', component: DashboardComponent},
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'user', component: UserComponent},
+  {path: 'user/:id', component: UserDetailComponent},
+  {path: 'task', component: TaskComponent},
+  {path: 'task/:id', component: TaskComponent},
+  {path: '', component: ImprintComponent},
+  {path: 'imprint', component: ImprintComponent},
+  {path: '', component: PrivacyPolicyComponent},
+  {path: 'privacy-policy', component: PrivacyPolicyComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
