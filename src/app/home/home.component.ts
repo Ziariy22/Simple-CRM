@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Subscription, timer } from "rxjs";
-import { map, share } from "rxjs/operators";
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class HomeComponent implements OnInit {
   router: any;
   title = 'clock-greets';
   time: Date | undefined;
@@ -38,13 +36,9 @@ export class DashboardComponent implements OnInit {
     }
   }
 
-
   ngOnInit(): void {
   }
 
 
+
 }
-
-
-
-

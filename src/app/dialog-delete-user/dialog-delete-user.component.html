@@ -5,9 +5,7 @@
 </div>
 
 <div mat-dialog-actions>
-  <button class="cancel-btn" (click)="dialogRef.close()" mat-button>
-    Cancel
-  </button>
+  <button class="cancel-btn" (click)="closeDialog()" mat-button>Cancel</button>
   <button class="delete-btn" (click)="deleteUser()" mat-button cdkFocusInitial>
     Delete
   </button>

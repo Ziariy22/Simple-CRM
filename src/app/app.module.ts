@@ -37,6 +37,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { DialogAddTaskComponent } from './dialog-add-task/dialog-add-task.component';
 import {MatSelectModule} from '@angular/material/select';
 import { DialogDeleteUserComponent } from './dialog-delete-user/dialog-delete-user.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -58,7 +60,9 @@ import { DialogDeleteUserComponent } from './dialog-delete-user/dialog-delete-us
     ImprintComponent,
     PrivacyPolicyComponent,
     DialogAddTaskComponent,
-    DialogDeleteUserComponent
+    DialogDeleteUserComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
